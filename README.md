@@ -1,2 +1,1 @@
-# IChowdhury01.github.io
-Personal website and portfolio.
+# Personal Website and Portfolio
