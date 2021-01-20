@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Ivan's Home</title>
+		<title>Ivan's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,7 +14,8 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
 						<a href="index.html" class="logo">Ivan Chowdhury</a>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -23,30 +24,28 @@
 
 				<!-- Menu -->
 					<nav id="menu">
-						<ul class="links">
-							<li><a href="#banner" class="scrolly">Home</a></li>
-							<li><a href="#contact" class="scrolly">Contact</a></li>
-						</ul>
 						<ul class="actions stacked">
-							<li><a href="portfolio.html" class="button fit">Portfolio</a></li>
-							<li><a href="assets\docs\Resume.pdf" target="_blank" rel="noopener noreferrer" class="button fit">Resume</a></li>
+							<li><a href="index.html" class="button fit">Home</a></li>
+							<li><a href="#three" class="button fit">Resume</a></li>
+						</ul>
+						<ul class="links">
+							<li><a href="#banner" class="scrolly">Portfolio</a></li>
+							<li><a href="#contact" class="scrolly">Contact</a></li>
 						</ul>
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major">
-						<div id="intro" class="inner">
-							<img src="assets/photos/uni-cropped2.png" alt="" id="pfp">
-
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
 							<header class="major">
-								
-								<h1>Hi, I'm Ivan.</h1>
+								<h1>Portfolio</h1>
 							</header>
 							<div class="content">
-								<p>I'm a new graduate with a Bachelor of Engineering in electrical engineering. I have experience in web app development, android development, machine learning modeling, and IoT programming, among other technologies. I have a passion for learning new technologies and polishing my craft, and aspirations to use my skills to help others around the world.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Tour</a></li>
-								</ul>
+								<p>A showcase of my biggest projects.</p>
 							</div>
 						</div>
 					</section>
@@ -55,54 +54,65 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
+							<section id="one">
+								<div class="inner">
 									<header class="major">
-										<h3><a href="#two" class="scrolly">About Me</a></h3>
-										<p>Learn more about me</p>
+										<h2>GitHub</h2>
 									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="portfolio.html" class="link">Portfolio</a></h3>
-										<p>View My Projects</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="assets\docs\Resume.pdf" class="link"></a>Resume</a></h3>
-										<p>Download a PDF Copy</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="#contact" class="scrolly">Contact</a></h3>
-										<p>Find My Contact Info</p>
-									</header>
-								</article>
+									<p>The majority of my projects are fully open-source and available on GitHub. The projects shown here are primarily highlights from recent years, as well as those without a software component. To find the rest of my projects, or to find further details for the projects showcased here, please visit my GitHub.</p>
+									<ul class="actions">
+										<li><a href="https://github.com/IChowdhury01" target="_blank" rel="noopener noreferrer" class="button next">GitHub</a></li>
+									</ul>
+								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
+							<section id="two" class="spotlights">
+								<section>
+									<a href="https://github.com/IChowdhury01/ItsMe-Attachable-Smart-Lock" target="_blank" rel="noopener noreferrer" class="image">
+										<img src="assets\photos\Hardware.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>ItsMe: Attachable Smart Lock</h3>
+											</header>
+											<p>ItsMe is an Android app that controls an attachable smart lock IoT device remotely through a server hosted on a Raspberry Pi. The goal of this project is to create a more versatile form of lock that can be freely attached onto deadbolt doorlocks and then controlled remotely via a smartphone application. The lock's design is open-source and thus modifiable to the owner's preferences, 3D-printable from standard materials, and requires low-cost installation without home renovation.
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/IChowdhury01/ItsMe-Attachable-Smart-Lock" target="_blank" rel="noopener noreferrer" class="button next"class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://github.com/IChowdhury01/MATCH" target="_blank" rel="noopener noreferrer" class="image">
+										<img src="assets/photos/matchlogo.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Match: Friend Finder</h3>
+											</header>
+											<p>MATCH is a friend-matching web application that uses user geolocation data, personal hobbies, and various other preferences to match users with new friends near their area.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/IChowdhury01/MATCH" target="_blank" rel="noopener noreferrer" class="button next" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>About Me</h2>
+										<h2>Resume</h2>
 									</header>
-									<p>I graduated from The Cooper Union for the Advancement of Science and Art with the Class of 2020, earning a Bachelor of Engineering in electrical engineering and majoring in computer engineering. My coursework involved extensive work in both hardware design and software development.</p>
-									<p>I have experience working in a variety of technologies, from developing web and android apps, to programming Raspberry Pi's for IoT devices, to building machine learning models in TensorFlow. I've taken courses in software engineering, data structures and algorithms, web development, artificial intelligence, natural language processing, operating systems, and computer architecture.</p>
-									<p>I have a passion for learning new technologies and perfecting my craft, and aspirations to use my skills to help others all throughout the world. My dream is to travel around the world, visiting cities in Europe and Asia and experiencing new cultures, all the while building applications that can help solve real-world problems faced there. My hobbies outside of professional work include reading science fiction and fantasy, weightlifting, cooking, playing chess, and gaming.</p>
+									<p>Click here for an up-to-date copy of my resume. It contains further details on some of the projects showcased here.</p>
+									<ul class="actions">
+										<li><a href="assets\docs\Resume.pdf" target="_blank" rel="noopener noreferrer" class="button next">Resume</a></li>
+									</ul>
 								</div>
 							</section>
 
