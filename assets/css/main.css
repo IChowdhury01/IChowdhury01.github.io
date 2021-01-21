@@ -3625,6 +3625,28 @@ input, select, textarea {
 			border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		}
 
+/* Embedded Videos*/
+	.videoContainer {
+	width: 100vw; /*now it is 100% of viewport (window) width.*/
+	display: inline-block;
+	position: relative;
+  }
+
+	.videoContainer::after {
+	padding-top: 56.25%; /* 16:9 ratio - divide height by width and multiply by 100 */
+	display: block;
+	content: '';
+  }
+  
+    .videoContainer>iframe{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+  }
+
 /* Contact */
 
 	#contact {
