@@ -1,3 +1,3 @@
 # Personal Website and Portfolio
 
-Link: https://IChowdhury01.github.io
+URL: [ichowdhury.me](http://www.ichowdhury.me)
