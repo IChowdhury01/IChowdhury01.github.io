@@ -2218,7 +2218,7 @@ input, select, textarea {
 		border-bottom: grey;
 	}
 	.imagectr img {
-		width: 100%;
+		max-width: 100%;
 		vertical-align: top;
 	}
 /* List */
