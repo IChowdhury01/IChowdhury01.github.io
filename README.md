@@ -1,3 +1,3 @@
 # Personal Website and Portfolio
 
-[![home-page](https://i.imgur.com/TlXwDNw.jpg)](http://www.ichowdhury.me)
+[![home-page](/assets/photos/home.jpeg)](http://www.ichowdhury.me)
