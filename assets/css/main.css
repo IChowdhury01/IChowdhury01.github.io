@@ -2212,6 +2212,15 @@ input, select, textarea {
 
 			}
 
+	.imagectr {
+		display: flex;
+		align-items: center;
+		border-bottom: black;
+	}
+	.imagectr img {
+		width: 100%;
+		vertical-align: top;
+	}
 /* List */
 
 	ol {
