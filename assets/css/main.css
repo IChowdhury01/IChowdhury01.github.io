@@ -2215,7 +2215,7 @@ input, select, textarea {
 	.imagectr {
 		display: flex;
 		align-items: center;
-		border-bottom: black;
+		border-bottom: grey;
 	}
 	.imagectr img {
 		width: 100%;
