@@ -2215,11 +2215,12 @@ input, select, textarea {
 	.imagectr {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		border-bottom: grey;
 	}
 	.imagectr img {
 		max-width: 100%;
-		vertical-align: top;
+		height: auto;
 	}
 /* List */
 
