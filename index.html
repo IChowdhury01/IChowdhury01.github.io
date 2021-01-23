@@ -112,7 +112,8 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form action="/assets/form.php/" method="post" class="ajax">
+								<!-- <form action="/assets/form.php/" method="post" class="ajax"> -->
+								<form action="https://formspree.io/f/xqkgnypr" method="post" target="_blank" enctype="multipart/form-data">	
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -126,15 +127,18 @@
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
+										<div class="field half">
+											<label for="attachment">
+												Attachment
+												<input type="file" name="upload">
+											</label>
+										</div>
 									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary"/></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
-								<div>
-									Note: the form is currently inoperable. Please contact me by email instead. Thank you.
-								</div>
 							</section>
 							<section class="split">
 								<section>
