@@ -326,32 +326,3 @@
 			});
 
 })(jQuery);
-
-// $('form.ajax').on('submit', function() {
-// 	var myForm = $(this),
-// 		url = myForm.attr('action'),
-// 		method = myForm.attr('method'),
-// 		fields = {};
-
-// 	myForm.find('[name]').each(function(index,value) {
-// 		var myForm = $(this),
-// 			name = myForm.attr('name'),
-// 			value = myForm.val();
-// 		fields[name] = value;
-// 	});
-
-// 	console.log(url);
-// 	console.log(method);
-// 	console.log(fields);
-
-// 	$.ajax({
-// 		url: url,
-// 		method: method,
-// 		fields: fields,
-// 		success: function(response) {
-// 			console.log(response);
-// 		}
-// 	});
-
-// 	return false;
-// });
