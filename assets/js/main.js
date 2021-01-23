@@ -103,12 +103,7 @@
 		if (browser.name == 'ie' || browser.name == 'edge')
 			$body.addClass('is-ie');
 
-	// Scrolly.
-		$('.scrolly').scrolly({
-			offset: function() {
-				return $header.height() - 2;
-			}
-		});
+
 
 	// Tiles.
 		var $tiles = $('.tiles > article');
@@ -146,11 +141,12 @@
 
 						var href = $link.attr('href');
 
-						// Prevent default.
+						if (!$link.hasClass('scrolly')) {
+							// Prevent default.
 							event.stopPropagation();
 							event.preventDefault();
 
-						// Target blank?
+							// Target blank?
 							if ($link.attr('target') == '_blank') {
 
 								// Open in new tab.
@@ -158,7 +154,7 @@
 
 							}
 
-						// Otherwise ...
+							// Otherwise ...
 							else {
 
 								// Start transitioning.
@@ -171,10 +167,19 @@
 									}, 500);
 
 							}
+						}
+
 
 					});
 
 				}
+		});
+
+		// Scrolly.
+		$('.scrolly').scrolly({
+			offset: function() {
+				return $header.height() - 2;
+			}
 		});
 
 	// Header.

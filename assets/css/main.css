@@ -2152,6 +2152,34 @@ input, select, textarea {
 		background-color: #37a6cb;
 	}
 
+	#up-icon-ctr {
+		font-size: 0.5em;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 0em;
+		margin-top: -5em;
+	}
+
+	#up-icon {
+		border-bottom: blue;
+	}
+
+	#socials {
+		padding-left: 1em;
+	}
+
+	@media screen and (max-width: 480px) {
+		#socials {
+			padding-left: 0.5em;
+		}
+	}
+
+	@media screen and (max-width: 360px) {
+		#socials {
+			padding-left: 0em;
+		}
+	}
+
 /* Image */
 
 	.image {
@@ -2222,6 +2250,9 @@ input, select, textarea {
 		max-width: 100%;
 		height: auto;
 	}
+
+
+	
 /* List */
 
 	ol {
@@ -3378,12 +3409,38 @@ input, select, textarea {
 		}
 
 /* Banner */
-
+	
+	#pfpbox {
+		display: flex;
+		justify-content: center;
+	}
 	#pfp {
-		display: block;
-		margin: auto;
+		max-width: 17.5%;
+    	height: auto;
+		width: auto\9; /* for ie8 support */
+	}
+	
+	@media screen and (max-width: 1024px) {
+		#pfp {
+			max-width: 25%;
+		}
 	}
 
+	@media screen and (max-width: 768px) {
+		#pfp {
+			max-width: 30%;
+		}
+	}
+	
+
+
+	@media screen and (max-width: 480px) {
+		#pfp {
+			max-width: 50%;
+			margin-bottom: 2em;
+		}
+	}
+	
 	#intro {
 		margin-top: 1em;
 	}
@@ -3406,12 +3463,11 @@ input, select, textarea {
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
-		margin-bottom: -3.25em;
+		margin-bottom: 0em;
 		max-height: 32em;
 		min-height: 22em;
 		position: relative;
 		top: -3.25em;
-		margin-bottom: 2em;
 	}
 
 		#banner:after {
